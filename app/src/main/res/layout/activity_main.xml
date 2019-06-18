@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ballsanji"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_team1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team1text"
+        android:textAlignment="center"
+        android:textSize="@dimen/genText"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ll_padding"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/bt_t1M"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/minusText"
+            android:background="@color/team1Color"
+            android:onClick="decT1S"
+            />
+
+        <TextView
+            android:id="@+id/tv_t1S"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="@string/team1S"
+            android:textAlignment="center"
+            android:textSize="@dimen/scoreSize"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/bt_t1P"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/plusText"
+            android:onClick="incT1S"
+            android:background="@color/team1Color"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ll_padding"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/bt_t2M"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/minusText"
+            android:background="@color/team2Color"
+            android:onClick="decT2S"
+            />
+
+        <TextView
+            android:id="@+id/tv_t2S"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="@string/team2S"
+            android:textAlignment="center"
+            android:textSize="@dimen/scoreSize"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/bt_t2P"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:text="@string/plusText"
+            android:background="@color/team2Color"
+            android:onClick="incT2S"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_team2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team2text"
+        android:textAlignment="center"
+        android:textSize="@dimen/genText"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

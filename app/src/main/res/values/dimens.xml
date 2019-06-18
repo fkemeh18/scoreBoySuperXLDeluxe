@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="genText">30sp</dimen>
+    <dimen name="scoreSize">50sp</dimen>
+    <dimen name="ll_padding">20dp</dimen>
+    <dimen name="winTextSize">40sp</dimen>
+</resources>

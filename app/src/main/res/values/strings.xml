@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">scoreBoySuperXL</string>
+    <string name="team1text">Team 1</string>
+    <string name="team2text">Team 2</string>
+    <string name="minusText">-</string>
+    <string name="plusText">+</string>
+    <string name="team1S">@string/startingScore</string>
+    <string name="team2S">@string/startingScore</string>
+    <string name="startingScore">0</string>
+    <string name="winnerText">Team 1 won by 5 points!</string>
+</resources>
