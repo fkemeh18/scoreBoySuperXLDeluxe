@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">@color/winnerPrimaryColor</color>
+    <color name="colorPrimaryDark">@color/winnerSecondaryColor</color>
     <color name="colorAccent">#D81B60</color>
     <color name="team1Color">#ff0000</color>
     <color name="team1">#00dd00</color>
     <color name="team2">#dddd00</color>
     <color name="team2Color">#0000ff</color>
+    <color name="winnerPrimaryColor">#6A48B8</color>
+    <color name="winnerSecondaryColor">#5cd3ff</color>
 </resources>

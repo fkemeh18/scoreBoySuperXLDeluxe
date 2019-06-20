@@ -5,18 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5cd3ff"
+    android:background="@color/winnerSecondaryColor"
     tools:context=".WinnerActivity"
     >
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/winnerPrimaryColor"
+        android:logo="@drawable/winnericon"
+        android:title="@string/winnerTitle"
+        android:titleTextColor="#e5e4e2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi"
+        tools:layout_editor_absoluteX="-29dp">
+
+    </Toolbar>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -29,13 +44,57 @@
         android:text="@string/winnerText"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#6A48B8"
+        android:textColor="@color/winnerPrimaryColor"
         android:textSize="@dimen/winTextSize"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_map"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="MAP"
+        android:textSize="@dimen/bt_textSize"
+        android:textColor="@color/winnerPrimaryColor"
+        android:background="@color/winnerSecondaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:onClick="shareMap"
+        />
+
+    <Button
+        android:id="@+id/bt_call"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="CALL"
+        android:textSize="@dimen/bt_textSize"
+        android:textColor="@color/winnerPrimaryColor"
+        android:background="@color/winnerSecondaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toStartOf="@+id/bt_text"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:onClick="shareCall"
+        />
+
+    <Button
+        android:id="@+id/bt_text"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="SEND"
+        android:textSize="@dimen/bt_textSize"
+        android:textColor="@color/winnerPrimaryColor"
+        android:background="@color/winnerSecondaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toStartOf="@+id/bt_map"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:onClick="shareText"
+        />
 
 </android.support.constraint.ConstraintLayout>

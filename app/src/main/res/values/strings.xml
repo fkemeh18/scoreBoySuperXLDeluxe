@@ -8,4 +8,5 @@
     <string name="team2S">@string/startingScore</string>
     <string name="startingScore">0</string>
     <string name="winnerText">Team 1 won by 5 points!</string>
+    <string name="winnerTitle">"    WINNER!!!"</string>
 </resources>

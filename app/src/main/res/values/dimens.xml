@@ -4,4 +4,5 @@
     <dimen name="scoreSize">50sp</dimen>
     <dimen name="ll_padding">20dp</dimen>
     <dimen name="winTextSize">40sp</dimen>
+    <dimen name="bt_textSize">10sp</dimen>
 </resources>
